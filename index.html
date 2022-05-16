@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sandbox Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+  <body>
+    <h1 id="title">Sandbox Survey Form</h1>
+    <p id="description">
+      Fill out this survey for the upcoming Sandbox Developer application on May 30th!</p>
+      <hr>
+      <form id="survey-form">
+        <fieldset>
+        <label id="name-label">Name: <input required class="namail" placeholder="John Doe" id="name" type="text"/> </label>
+        <label id="email-label">Email: <input required class="namail" placeholder="asdf@example.com"id="email" type="email"/> </label>
+        <label id="number-label">Number:<input type="number" class="namail" placeholder="123-456-7890"min="0" max="9999999" id="number"/></label>
+        <select id="dropdown">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+          </select>
+</fieldset>
+<fieldset>
+  <label class="pos">
+          <input name="end" type="radio" value="front" class="inline">Front-End Developer</input>
+          </label>
+          <label>
+          <input name="end" type="radio" value="back" class="inline">Back-End Developer</input>
+          </label>
+</fieldset>
+
+<fieldset>
+  <input class="inline" value="course" type="checkbox">Fundies 1
+  </input>
+  <input class="inline" value="course" type="checkbox">Fundies 2
+  </input>
+  <input class="inline" value="course" type="checkbox">Algo
+  </input>
+  <input value="course" type="checkbox" class="inline">OOD
+  </input>
+  <input class="inline" value="course" type="checkbox">Logic
+  </input>
+  </fieldset>
+  <fieldset>
+    <label>Additional Comments:
+    <textarea name="comments" placeholder="Leave blank if none."rows="5" cols="30">
+      </textarea>
+      </label>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit"/>
+        </form>
+    </body>
+  </html>
